@@ -25,11 +25,78 @@ body {
     line-height: 1.7;
 }
 
-<nav>
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--secondary);
+    z-index: 1000;
+    border-bottom: 1px solid #003566;
+    height: 90px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.banner-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all .3s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    color: var(--accent-hover);
+}<nav>
     <div class="nav-container">
         <div class="logo-area">
             <img src="anits-logo.jpg" alt="ANITS Logo" class="logo">
-            <span class="college-name">Anil Neerukonda Institute of Technology and Sciences</span>
+            <img src="anits-banner.png" alt="ANITS Banner" class="banner-img">
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -40,33 +107,6 @@ body {
         </ul>
     </div>
 </nav>
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-main);
-    font-weight: 600;
-    transition: all .3s ease;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--accent-hover);
-    left: 0;
-    bottom: -5px;
-    transition: .3s;
-}
-
-nav ul li a:hover {
-    color: var(--accent-hover);
-}
 
 nav ul li a:hover::after {
     width: 100%;
