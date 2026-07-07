@@ -7,23 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img id="logo-preview" src="https://via.placeholder.com/40x40?text=Logo" alt="Logo">
+                <label for="logo-upload" class="upload-btn-sm">Change Logo</label>
+                <input type="file" id="logo-upload" accept="image/*" style="display: none;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <section id="home">
-        <img src="https://via.placeholder.com/180x180?text=Profile" alt="Penta Venkata Sai Kranthi">
+        <div class="profile-wrapper">
+            <img id="profile-preview" src="https://via.placeholder.com/180x180?text=Profile" alt="Penta Venkata Sai Kranthi">
+            <label for="profile-upload" class="upload-btn">Upload Photo</label>
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+        </div>
+
         <h1>Penta Venkata Sai Kranthi</h1>
         <p>
             <strong>Branch:</strong> Information Technology (IT)<br>
@@ -135,5 +147,23 @@
         </address>
     </footer>
 
+    <script>
+        function setupImageUpload(inputId, previewId) {
+            document.getElementById(inputId).addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById(previewId).src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        // Initialize uploads
+        setupImageUpload('profile-upload', 'profile-preview');
+        setupImageUpload('logo-upload', 'logo-preview');
+    </script>
 </body>
 </html>
