@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penta Venkata Sai Kranthi | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio | Penta Venkata Sai Kranthi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <nav>
         <div class="nav-container">
-            <div class="logo-wrapper">
-                <img id="logo-preview" src="https://via.placeholder.com/40x40?text=Logo" alt="Logo">
-                <label for="logo-upload" class="upload-btn-sm">Change Logo</label>
-                <input type="file" id="logo-upload" accept="image/*" style="display: none;">
-            </div>
+            <img src="anits-logo.jpg" alt="ANITS Logo" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -29,141 +22,106 @@
         </div>
     </nav>
 
-    <section id="home">
-        <div class="profile-wrapper">
-            <img id="profile-preview" src="https://via.placeholder.com/180x180?text=Profile" alt="Penta Venkata Sai Kranthi">
-            <label for="profile-upload" class="upload-btn">Upload Photo</label>
-            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Penta Venkata Sai Kranthi" class="profile-img">
+            <h1>Penta Venkata Sai Kranthi</h1>
+            <p class="subtitle">III B.Tech IT | Anil Neerukonda Institute of Technology</p>
+            <p class="tagline">Aspiring Data Analyst passionate about data-driven decision making.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
         </div>
-
-        <h1>Penta Venkata Sai Kranthi</h1>
-        <p>
-            <strong>Branch:</strong> Information Technology (IT)<br>
-            <strong>College:</strong> Anil Neerukonda Institute of Technology and Sciences<br>
-            <strong>Year:</strong> 3rd Year
-        </p>
-        <p>
-            <em>Aspiring Data Analyst passionate about transforming data into meaningful insights and building a successful career at Walmart.</em>
-        </p>
-    </section>
+    </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            Hello! I am <strong>Penta Venkata Sai Kranthi</strong>, a third-year Information Technology student at
-            <mark>Anil Neerukonda Institute of Technology and Sciences</mark>. I am interested in the
-            <strong>non-coding domain</strong>, especially Data Analytics.
-        </p>
-        <p>
-            My career goal is to become a <strong>Data Analyst at Walmart</strong>, secure a good
-            <strong>GATE rank</strong>, and achieve success through campus placements.
-            I believe Information Technology provides the best path to achieve these ambitions.
-        </p>
-        <p>
-            Apart from academics, I enjoy <em>dancing</em>, <em>reading books</em>, and
-            <em>listening to music</em>. I am always eager to learn new technologies and improve my personal and professional skills.
-        </p>
+        <p>I am currently a 3rd-year Information Technology student at <strong>Anil Neerukonda Institute of Technology (ANITS)</strong>. I chose this branch because it provides the <strong>best strategic path</strong> for me to develop the technical foundation necessary to achieve my career milestones.</p>
+        
+        <p>My ultimate core goals are becoming a successful <em>Data Analyst at Walmart</em>, achieving an excellent <em>GATE rank</em>, and securing a strong placement right from campus. My academic and technical interests heavily lean towards the <strong>non-coding/analytical domain</strong>, focusing on uncovering hidden insights within data structures.</p>
+        
+        <p>When I am not studying, I enjoy refreshing my mind through my hobbies, which include <mark>dancing</mark>, <mark>reading books</mark>, and <mark>listening to songs</mark>.</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div>
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
                 <h3>Technical Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                </ul>
+                <div class="badges">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">SQL</span>
+                </div>
             </div>
-            <div>
+            <div class="skills-category">
                 <h3>Soft Skills</h3>
-                <ul>
-                    <li>Communication</li>
-                    <li>Adaptability</li>
-                    <li>Time Management</li>
-                    <li>Team Work</li>
-                    <li>Problem Solving</li>
-                    <li>Leadership</li>
-                </ul>
+                <div class="badges">
+                    <span class="badge soft">Communication</span>
+                    <span class="badge soft">Adaptive</span>
+                    <span class="badge soft">Time Management</span>
+                    <span class="badge soft">Team Work</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="projects">
+        <div class="projects-grid">
             <div class="card">
-                <h3>Walmart Sales Data Analysis</h3>
-                <p>
-                    An academic data analytics project that analyzes Walmart sales data using Python and SQL to identify sales trends, customer behavior, and business insights.
-                </p>
-                <a href="#">View Project</a>
+                <h3>Retail Sales Data Analysis Dashboard</h3>
+                <p>A concept project focusing on descriptive analytics using Python and SQL to identify buying trends, optimize stock levels, and predict consumer behavior in a retail environment.</p>
+                <a href="#" class="project-link">View Project Draft</a>
             </div>
             <div class="card">
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                    Designed and developed a responsive personal portfolio website using HTML and CSS to showcase my skills, education, and career objectives.
-                </p>
-                <a href="#">View Project</a>
+                <h3>Predictive Analytical Framework</h3>
+                <p>An ongoing data manipulation setup designed to process complex datasets, cleaning data and utilizing foundational analytical models geared towards corporate placement metrics.</p>
+                <a href="#" class="project-link">View Project Draft</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
-
-            <button type="submit">Submit</button>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Penta Venkata Sai Kranthi. All Rights Reserved.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/kranthi-penta-040b113b4" target="_blank">LinkedIn</a> |
-            <a href="mailto:pentakranthi6@gmail.com" target="_blank">Email</a>
-        </p>
-        <address>
-            <strong>Penta Venkata Sai Kranthi</strong><br>
-            Information Technology<br>
-            Anil Neerukonda Institute of Technology and Sciences<br>
-            Email: pentakranthi6@gmail.com<br>
-            Phone: +91 7093228256
-        </address>
+        <div class="footer-content">
+            <p>&copy; 2026 Penta Venkata Sai Kranthi. All rights reserved.</p>
+            <address>
+                Email: <a href="mailto:pentakranthi6@gmail.com">pentakranthi6@gmail.com</a> | 
+                Phone: <a href="tel:+917093228256">7093228256</a>
+            </address>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kranthi-penta-040b113b4" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        function setupImageUpload(inputId, previewId) {
-            document.getElementById(inputId).addEventListener('change', function(event) {
-                const file = event.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        document.getElementById(previewId).src = e.target.result;
-                    };
-                    reader.readAsDataURL(file);
-                }
-            });
-        }
-
-        // Initialize uploads
-        setupImageUpload('profile-upload', 'profile-preview');
-        setupImageUpload('logo-upload', 'logo-preview');
-    </script>
 </body>
 </html>
