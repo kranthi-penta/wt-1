@@ -25,41 +25,21 @@ body {
     line-height: 1.7;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: var(--secondary);
-    z-index: 1000;
-    border-bottom: 1px solid #003566;
-    height: 70px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 100%;
-}
-
-.logo {
-    height: 55px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+<nav>
+    <div class="nav-container">
+        <div class="logo-area">
+            <img src="anits-logo.jpg" alt="ANITS Logo" class="logo">
+            <span class="college-name">Anil Neerukonda Institute of Technology and Sciences</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
 nav ul li {
     margin: 0 20px;
